@@ -1,3 +1,158 @@
 @use "./base/base";
 @use "./base/reset";
 @use "./global" as *;
+
+// header
+.header{
+  position: fixed;
+  height: 75px;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 1000;
+  width:100%;
+}
+
+.header__inner{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+}
+
+.header__title{
+  margin-right: auto;
+  margin-left: 22px;
+}
+
+.header__items{
+  display: flex;
+  align-items: center;
+  height: inherit;
+}
+
+.header__item:not(:first-child){
+  margin-left: 70px;
+}
+
+.header__item{
+  height: inherit;
+}
+
+.header__link{
+  color: $black;
+  font-size: 16px;
+  font-style: $medium;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: inherit;
+}
+
+.header__link--contact{
+  width: 104px;
+  background-color: $red;
+  color: $white;
+  font-size: 16px;
+  font-weight: $medium;
+  height: inherit;
+  text-align: center;
+}
+
+// ハンバーガー
+.hamberger{
+  width: 26px;
+  height: 16px;
+  position: fixed;
+  top: 30px;
+  right: 15px;
+  z-index: 1500;
+  cursor: pointer;
+}
+
+.hamberger span{
+  height: 2px;
+  width: 100%;
+  background-color: $black;
+  display: inline-block;
+  position: absolute;
+  transition: 0.3s transform, 0.3s background-color;
+}
+
+.hamberger span:nth-child(2){
+  top: 8px;
+  transition: 0.3s;
+}
+
+.hamberger span:nth-child(3){
+  top: 18px;
+}
+
+.hamberger.is-avtive span:nth-child(1){
+  top: 15px;
+  transform: rotate(-45deg);
+}
+
+.hamberger.is-avtive span:nth-child(2){
+  opacity: 1;
+}
+
+.hamberger.is-avtive span:nth-child(3){
+  top: 15px;
+  transform: rotate(45deg);
+}
+
+// 共通パーツ
+.inner{
+  width: 100%;
+  max-width: 1080px;
+  padding-left: 25px;
+  padding-right: 25px;
+  margin-right: auto;
+  margin-left: auto;
+  @include mq("md"){
+   padding-left: 15px;
+   padding-right: 15px;
+  }
+}
+.section-title__main{
+  font-size: 36px;
+  font-weight: $medium;
+  letter-spacing: 0.05m;
+  line-height: 1.4;
+  color: $green;
+}
+.section-title__sub{
+  font-size: 14px;
+  font-weight: $medium;
+  letter-spacing: 0.05m;
+  color: $red;
+  margin-top: 5px;
+  @include mq("md"){
+   font-size: 10px;
+  }
+}
+.section-title--center{
+  text-align: center;
+  @include mq("md"){
+   text-align: left;
+  }
+}
+.text--large{
+  font-size: 24px;
+  color: $black;
+  letter-spacing: 0.05m;
+  line-height: 1.75;
+  @include mq("md"){
+   font-size: 20px;
+  }
+}
+.text--small{
+  font-size: 15px;
+  color: $black;
+  letter-spacing: 0.05m;
+  line-height: 1.867;
+  @include mq("md"){
+   font-size: 14px;
+  }
+}
