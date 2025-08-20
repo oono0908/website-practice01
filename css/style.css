@@ -247,6 +247,9 @@ select::-ms-expand {
   height: 100vh;
   background-color: #202F43;
   display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
 
 .drawer__inner {
@@ -304,6 +307,10 @@ select::-ms-expand {
   width: 100%;
   height: inherit;
   position: relative;
+}
+
+.swiper-slide {
+  height: inherit;
 }
 
 .swiper-slide img {
