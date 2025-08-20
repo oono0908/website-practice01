@@ -297,8 +297,13 @@ select::-ms-expand {
 
 .mv__inner {
   height: inherit;
-  position: relative;
   width: 100%;
+}
+
+.swiper-wrapper {
+  width: 100%;
+  height: inherit;
+  position: relative;
 }
 
 .swiper-slide img {

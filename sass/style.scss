@@ -160,10 +160,18 @@
 
 .mv__inner{
   height: inherit;
-  position: relative;
   width: 100%;
 }
 
+.swiper-wrapper{
+  width: 100%;
+  height: inherit;
+  position: relative;
+}
+
+.swiper-slide{
+  height: inherit;
+}
 .swiper-slide img{
   object-fit: cover;
 }
