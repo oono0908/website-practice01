@@ -369,6 +369,38 @@ select::-ms-expand {
   text-align: center;
 }
 
+.about__inner {
+  padding: 100px 0;
+}
+
+.about__body {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 768px) {
+  .about__body {
+    display: block;
+  }
+}
+
+.about__sub-title {
+  margin-top: 40px;
+}
+
+.about__text {
+  margin-top: 35px;
+}
+
+.about__img {
+  width: 44%;
+  margin-left: 30px;
+}
+@media screen and (max-width: 768px) {
+  .about__img {
+    display: none;
+  }
+}
+
 .inner {
   width: 100%;
   max-width: 1080px;
