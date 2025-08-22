@@ -1,5 +1,5 @@
 $(function () {
-  $(".js-hamberger,.js-drawer,.js-drawer a").click(function() {
+  $(".js-hamberger,.js-drawer,.js-drawer__item a").click(function() {
      $(".js-hamberger").toggleClass("is-active")
      $(".js-drawer").fadeToggle()
     })
