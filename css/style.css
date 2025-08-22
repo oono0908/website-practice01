@@ -693,6 +693,18 @@ select::-ms-expand {
   opacity: 0.5;
 }
 
+.footer {
+  padding: 30px 0;
+  background-color: #202F43;
+}
+
+.footer__copyright {
+  color: #fff;
+  width: 100%;
+  display: inline-block;
+  text-align: center;
+}
+
 .inner {
   width: 100%;
   max-width: 1080px;
