@@ -514,6 +514,14 @@ select::-ms-expand {
   max-width: 800px;
   margin: 0 auto;
   padding: 100px 0;
+  padding-left: 25px;
+  padding-right: 25px;
+}
+@media screen and (max-width: 768px) {
+  .faq__inner {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .faq__accordion {
@@ -586,6 +594,72 @@ select::-ms-expand {
     padding: 16px 10px;
     padding-left: 2em;
   }
+}
+
+.contact__inner {
+  margin: 0 auto;
+  max-width: 600px;
+  width: 100%;
+  padding: 100px 25px;
+}
+
+.contact__form {
+  margin-top: 58px;
+}
+
+.form__list:not(:first-child) {
+  margin-top: 26px;
+}
+@media screen and (max-width: 768px) {
+  .form__list:not(:first-child) {
+    margin-top: 30px;
+  }
+}
+
+.form__title {
+  font-size: 15px;
+  font-weight: 500;
+  line-height: 2;
+}
+
+.form__input-text, .form__textarea {
+  margin-top: 8px;
+  width: 100%;
+  padding: 10px 14px;
+  font-size: 15px;
+  color: #868686;
+  background-color: #F7F7F7;
+}
+
+.form__input-text::-moz-placeholder, .form__textarea::-moz-placeholder {
+  color: #868686;
+}
+
+.form__input-text::placeholder,
+.form__textarea::placeholder {
+  color: #868686;
+}
+
+.form__textarea {
+  height: 171px;
+  resize: none;
+}
+
+.contact__btn {
+  margin-left: auto;
+  margin-right: auto;
+  width: 235px;
+  background-color: #F14E53;
+  margin-top: 50px;
+}
+
+.contact__btn input {
+  padding: 20px 0;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+  width: 100%;
 }
 
 .inner {
