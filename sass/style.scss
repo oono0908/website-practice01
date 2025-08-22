@@ -317,7 +317,7 @@
 
 // news
 .news{
-  margin-top: 100px;
+  padding: 100px 0;
 }
 
 .news__cards{
@@ -352,6 +352,84 @@
   line-height: 1.857;
   color: $black;
 }
+
+// FAQ
+
+.faq{
+  background-color: $white2;
+}
+.faq__inner{
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+
+.faq__accordion{
+  margin-top: 52px;
+  max-width: 800px;
+}
+
+.accordion__item:not(:first-child){
+  margin-top: 10px;
+}
+
+.accordion__title{
+  position: relative;
+  padding: 22px 20px;
+  background-color: $blue;
+  color: $white;
+  letter-spacing: 0.05em;
+  font-size: 15px;
+  @include mq("md"){
+    font-size: 14px;
+    padding: 22px 30px 21px 10px;
+  }
+}
+
+.accordion__title::before,
+.accordion__title::after{
+  position: absolute;
+  content:"";
+  width: 18px;
+  height: 2px;
+  background-color: $white;
+  top: 50%;
+  right: 21px;
+  transition: transform 0.3s, opacity 0.3s;
+  @include mq("md"){
+   width: 14px;
+  }
+}
+
+.accordion__title::after{
+  transform: rotate(-90deg);
+}
+
+.accordion__title.is-open::after{
+  transform: rotate(-180deg);
+}
+
+.accordion__title.is-open::before{
+  opacity: 0;
+}
+
+.accordion__text{
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  line-height: 1.867;
+  padding: 22px 20px;
+  text-indent: -1em;
+  padding-left: 1em;
+  display: none;
+  @include mq("md"){
+    font-size: 14px;
+    line-height: 1.714;
+    padding: 16px 10px;
+    padding-left: 2em;
+  }
+}
+
+
 // 共通パーツ
 .inner{
   width: 100%;
